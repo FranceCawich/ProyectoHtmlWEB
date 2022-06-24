@@ -8,12 +8,9 @@
 
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="css/sample.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<!---<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">-->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body {font-family:'Times New Roman', Times, serif}
-.mySlides {display: none}
-</style>
+
 </head>
 <body id="home">
 
@@ -38,24 +35,24 @@ body {font-family:'Times New Roman', Times, serif}
 
     <!-- Automatic Slideshow Images -->
     <div class="mySlides w3-display-container w3-center">
-      <img src="/image/black.jpg" style="width:100%">
+      <img src="/image/one.png" style="width:100%">
       <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
-        <h3>Infotech</h3>
-        <p><b>The key to artificial int!</b></p>   
+        <h3></h3>
+        <p><b></b></p>   
       </div>
     </div>
     <div class="mySlides w3-display-container w3-center">
-      <img src="/image/download.png" style="width:100%">
+      <img src="/image/two.png" style="width:100%">
       <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
         <h3>AI</h3>
-        <p><b>Artificiaions can elicit emrons quiver.</b></p>    
+        <p><b>.</b></p>    
       </div>
     </div>
     <div class="mySlides w3-display-container w3-center">
-      <img src="/image/hand.webp" style="width:100%">
+      <img src="/image/ten.png" style="width:100%">
       <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
         <h3>welcome</h3>
-        <p><b>A year spent in art God</b></p>    
+        <p style="color:black; font-size: 32px;"><b">Tensorflow Keras</b></p>    
       </div>
     </div>
   
@@ -89,42 +86,35 @@ body {font-family:'Times New Roman', Times, serif}
       <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
         <h2 class="w3-wide w3-center">OUR jOBS</h2>
         <p class="w3-opacity w3-center"><i>nice looking</i></p><br>
-  <!--
-     <ul class="w3-ul w3-border w3-white w3-text-grey">
-          <li class="w3-padding">September <span class="w3-tag w3-red w3-margin-left">Sold out</span></li>
-          <li class="w3-padding">October <span class="w3-tag w3-red w3-margin-left">Sold out</span></li>
-          <li class="w3-padding">November <span class="w3-badge w3-right w3-margin-right">3</span></li>
-        </ul>
-    
-    --->
+
        
   
         <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
           <div class="w3-third w3-margin-bottom">
-            <img src="/w3images/newyork.jpg" alt="New York" style="width:100%" class="w3-hover-opacity">
+            <img src="/image/dete.jpg " style="width:100%" class="w3-hover-opacity">
             <div class="w3-container w3-white">
-              <p><b>New York</b></p>
+              <p><b>Detecion de Plagas</b></p>
               <p class="w3-opacity">Fri 27 Nov 2016</p>
-              <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+              <p>Detecion de plagas con Aprendizaje profundo.</p>
               
             </div>
           </div>
           <div class="w3-third w3-margin-bottom">
-            <img src="/w3images/paris.jpg" alt="Paris" style="width:100%" class="w3-hover-opacity">
+            <img src="/image/para.png" alt="Paris" style="width:100%" class="w3-hover-opacity">
             <div class="w3-container w3-white">
-              <p><b>Paris</b></p>
+              <p><b>Programacion Parallela </b></p>
               <p class="w3-opacity">Sat 28 Nov 2016</p>
               <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
             
             </div>
           </div>
           <div class="w3-third w3-margin-bottom">
-            <img src="/w3images/sanfran.jpg" alt="San Francisco" style="width:100%" class="w3-hover-opacity">
+            <img src="/image/para.png" alt="San Francisco" style="width:100%" class="w3-hover-opacity">
             <div class="w3-container w3-white">
               <p><b>San Francisco</b></p>
               <p class="w3-opacity">Sun 29 Nov 2016</p>
               <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-              <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
+              <button class="w3-button w3-black w3-margin-bottom" >Buy Tickets</button>
             </div>
           </div>
         </div>
@@ -143,7 +133,7 @@ body {font-family:'Times New Roman', Times, serif}
           <i class="fa fa-envelope" style="width:30px"> </i> Email: Cawich.francis@gmail.com<br>
         </div>
         <div class="w3-col m6">
-          <form action="/action_page.php" target="_blank">
+          <form onsubmit="sendMail()" target="_blank">
             <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
               <div class="w3-half">
                 <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
@@ -153,7 +143,9 @@ body {font-family:'Times New Roman', Times, serif}
               </div>
             </div>
             <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
-            <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
+            <button class="w3-button w3-black w3-section w3-right" type="submit" >SEND</button>
+          
+          
           </form>
         </div>
       </div>

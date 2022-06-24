@@ -30,3 +30,9 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+
+function sendMail() {
+  alert("SU MENSAJE FUE ENVIDA EXITOSAMENTE!");
+
+}
